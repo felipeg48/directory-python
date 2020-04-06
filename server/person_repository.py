@@ -33,6 +33,7 @@ def add_person(person):
         return new_person
     return uperson
 
+
 def find_person_by_email(email):
     person = [person for person in persons if person['email'] == email]
     if len(person) == 0:
