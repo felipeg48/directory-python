@@ -43,13 +43,13 @@ def find_person_by_email(email):
 def update_person(person):
     uperson = find_person_by_email(person['email'])
     if uperson is not None:
-        new_person = {
+        upadate_person = {
             'email': person['email'],
             'name': person['name'],
             'phone': person['phone']
         }
-        persons[persons.index(uperson)] = new_person
-        return new_person
+        persons[persons.index(uperson)] = upadate_person
+        return upadate_person
 
     return None
 
