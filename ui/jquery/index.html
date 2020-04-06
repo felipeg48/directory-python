@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <meta name="theme-color" content="#563d7c">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .trash-pointer
+        {cursor: pointer;}
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Directory App</h2>
+            <p class="lead">This is a Directory App written in Python (Server) and just jQuery(Frontend).</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">  <!-- order-md-2 mb-4"> -->
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Directory</span>
+                    <span class="badge badge-secondary badge-pill" id="total"></span>
+                </h4>
+                <ul class="list-group mb-3" id="persons">
+                </ul>
+            </div>
+
+
+             <div class="col-md-8"> <!-- order-md-1" -->
+                <h4 class="mb-4">Persons</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="firstName">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="" value="">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        </div>
+                         <div class="col-md-4 mb-3">
+                            <label for="address">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="1-800-AWESOME">
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Save Person</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>

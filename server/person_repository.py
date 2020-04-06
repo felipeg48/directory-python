@@ -22,14 +22,16 @@ def get_all_persons():
 
 
 def add_person(person):
-    person = {
+    new_person = {
         'email': person['email'],
         'name': person['name'],
         'phone': person['phone']
     }
-    persons.append(person)
-    return person
-
+    uperson = update_person(person)
+    if uperson is None:
+        persons.append(new_person)
+        return new_person
+    return uperson
 
 def find_person_by_email(email):
     person = [person for person in persons if person['email'] == email]

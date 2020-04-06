@@ -1,6 +1,9 @@
 from flask import Flask, jsonify, make_response, request, abort
 from person_repository import add_person, find_person_by_email, get_all_persons, update_person, remove_person
+from flask_cors import CORS, cross_origin
+
 app = Flask(__name__)
+CORS(app)
 
 
 @app.errorhandler(404)
@@ -31,7 +34,8 @@ def update():
     person = update_person(request.json)
     if person is None:
         abort(404)
-    return jsonify(person),202
+    return jsonify(person), 202
+
 
 @app.route('/persons/<email>', methods=['DELETE'])
 def delete_person(email):
