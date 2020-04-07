@@ -48,8 +48,17 @@
       <x>30</x>
       <y>60</y>
       <width>121</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="tabChangesFocus">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_1">
@@ -71,8 +80,19 @@
       <x>180</x>
       <y>60</y>
       <width>121</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="tabChangesFocus">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>myemail@email.com</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="textPhone">
@@ -81,8 +101,19 @@
       <x>330</x>
       <y>60</y>
       <width>121</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="tabChangesFocus">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>1-800-AWESOME</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
