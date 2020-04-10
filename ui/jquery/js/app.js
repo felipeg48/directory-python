@@ -2,7 +2,9 @@ $(function(){
     loadPersons();
 });
 
-
+//Python: def loadPersons():
+//  Java: public void loadPersons(){ }
+// JavaScript:  function $.getJSON() {}
 function loadPersons(){
     $.getJSON("http://localhost:5000/", function(data) {
         var items = [];

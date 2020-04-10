@@ -5,6 +5,6 @@
 - Execute:
    ```shell script
    $ npm install
-   $ npm run distz
+   $ npm run dist
    ```
 

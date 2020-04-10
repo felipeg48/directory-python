@@ -24,4 +24,4 @@ This is the Client for another pythons apps
 
 ## GUI
 
-This will have jQuery, VueJS and PyQT
+This will have jQuery, Electron and PyQT
